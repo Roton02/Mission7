@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_image": "https://i.ibb.co/QbSTFZW/sanket-shah-e-EWlcfydz-Q4-unsplash.jpg",
+      "recipe_id": 1,
+      "recipe_name": "Spaghetti Carbonara",
+      "short_description": "Classic Italian pasta dish with bacon, eggs, and cheese",
+      "ingredients": [ "200 g pancetta or bacon", "4 large eggs", "100 g grated Parmesan cheese", "2 cloves garlic", "Salt and black pepper"],
+      "preparing_time": "25 min",
+      "calories": "480 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/JtfZ4bG/annie-spratt-e-F4zd09-O4b8-unsplash.jpg",
+      "recipe_id": 2,
+      "recipe_name": "Mushroom Risotto",
+      "short_description": "Creamy and flavorful risotto made with Arborio rice and mushrooms",
+      "ingredients": ["300 g Arborio rice", "400 g mushrooms", "1 onion", "1.5 liters vegetable broth", "100 ml white wine", "50 g grated Parmesan cheese"],
+      "preparing_time": "40 min",
+      "calories": "380 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/gtqtFM8/alina-chernysheva-oj2h-Bf5-TOFM-unsplash.jpg",
+      "recipe_id": 3,
+      "recipe_name": "Greek Salad",
+      "short_description": "Refreshing salad with cucumbers, tomatoes, olives, and feta cheese",
+      "ingredients": [ "1 red onion", "200 g feta cheese", "100 g Kalamata olives", "1 green bell pepper"],
+      "preparing_time": "15 min",
+      "calories": "250 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/Q9zwv48/yalamber-limbu-708-Opf-CW4-H8-unsplash.jpg",
+      "recipe_id": 4,
+      "recipe_name": "Chicken Tikka Masala",
+      "short_description": "Spicy and creamy Indian dish with marinated chicken in a tomato-based sauce",
+      "ingredients": ["500 g chicken breast", "200 ml yogurt", "200 g tomato puree", "1 onion", "3 cloves garlic", "2 tbsp ginger paste"],
+      "preparing_time": "35 min",
+      "calories": "380 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/dMBR92Y/loes-klinker-JXcgx-U7eh4-unsplash.jpg",
+      "recipe_id": 5,
+      "recipe_name": "Caprese Salad",
+      "short_description": "Simple and elegant Italian salad with fresh tomatoes, mozzarella, and basil",
+      "ingredients": ["4 large tomatoes", "200 g fresh mozzarella cheese", "1 bunch fresh basil leaves", "2 tbsp balsamic vinegar", "2 tbsp olive oil", "Salt and pepper"],
+      "preparing_time": "10 min",
+      "calories": "220 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/ySYdDM4/nathan-dumlao-8-Uv6ean-QWz-Y-unsplash.jpg",
+      "recipe_id": 6,
+      "recipe_name": "Vegetable Curry",
+      "short_description": "Aromatic and spicy curry with assorted vegetables in a coconut milk base",
+      "ingredients": ["2 potatoes", "1 eggplant", "1 carrot", "1 bell pepper", "200 g green beans", "400 ml coconut milk"],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    }
+  ]
+  
