@@ -3,15 +3,17 @@ import './App.css'
 import Banner from './Components/Banner'
 import Header from './Components/Header'
 import Recipe from './Components/Recipe'
+import Footer from './Components/Footer'
 
 function App() {
   const [showD ,setShowD] =useState([])
   const showDetails =(details)=>{
-    
-  //  const alreadyExist = showD.find(d => d.id !== details.id)
-  //  if(alreadyExist){ 
-     setShowD([...showD, details])
-  //  }
+    const already = showD.find(item => item.recipe_id != details.recipe_id)
+    if(!already){ 
+      setShowD([...showD, details])
+    }else{
+      alert('Please')
+    }
   }
   const [currentCocking, setCurrentCocking]=useState([])
   const currentCock =(cockItem, id)=>{
@@ -26,6 +28,7 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <Recipe currentCocking={currentCocking} currentCock={currentCock} showD={showD} showDetails={showDetails}></Recipe>
+      <Footer></Footer>
     </div>
   )
 }

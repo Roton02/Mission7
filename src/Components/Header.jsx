@@ -15,7 +15,8 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-2">
-  <input type="text" placeholder="Search" className="input input-bordered w-48 h-8" />
+  <input type="text" placeholder="Search"
+   className="input input-bordered w-24 md:w-48 h-8 " />
     <a className="btn rounded-full bg-green-600"> <CgProfile /></a>
   </div>
 </div>

@@ -5,11 +5,11 @@ const RecipeCart = ({ recipe,showDetails }) => {
   const {recipe_name,recipe_image, short_description,preparing_time,calories,ingredients} = recipe;
   return (
     <div>
-      <div className="card w-96 bg-gray-50 border-2">
+      <div className="card px-0 bg-gray-50 ">
         <figure className="">
-          <img src={recipe_image}  alt="Shoes" className="rounded-xl w-72 h-72" />
+          <img src={recipe_image}  alt="Shoes" className="rounded-xl w-full" />
         </figure>
-        <div className="card-body space-y-1 ">
+        <div className="card-body space-y-0 ">
           <h2 className="card-title font-bold">{recipe_name}</h2>
           <p>{short_description}</p>
           {/* <div className="divider-vertical text-black h-2 w-52">  </div> */}
