@@ -1,4 +1,4 @@
-
+import { CgProfile } from "react-icons/cg";
 const Header = () => {
     return (
         <div>
@@ -16,7 +16,7 @@ const Header = () => {
   </div>
   <div className="navbar-end space-x-2">
   <input type="text" placeholder="Search" className="input input-bordered w-48 h-8" />
-    <a className="btn rounded-full bg-green-600">50</a>
+    <a className="btn rounded-full bg-green-600"> <CgProfile /></a>
   </div>
 </div>
         </div>

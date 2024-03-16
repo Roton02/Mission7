@@ -1,7 +1,7 @@
 import { CiTimer } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 const RecipeCart = ({ recipe,showDetails }) => {
-  // console.log(recipe);
+  // console.log(currentCock);
   const {recipe_name,recipe_image, short_description,preparing_time,calories,ingredients} = recipe;
   return (
     <div>
@@ -25,7 +25,7 @@ const RecipeCart = ({ recipe,showDetails }) => {
             </div>
             <div className="flex gap-10 ">
               <h1 className="text-sm font-normal"><CiTimer /> {preparing_time} minit</h1>
-              <h1 className="text-sm font-normal"><FaFire /> {preparing_time} minit</h1>
+              <h1 className="text-sm font-normal"><FaFire /> {calories} minit</h1>
             </div>
           <div className="card-actions justify-start">
       <button onClick={()=>showDetails(recipe)} className="btn bg-green-600 rounded-xl text-black font-semibold">Want to Cook</button>

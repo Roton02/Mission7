@@ -9,17 +9,23 @@ function App() {
   const showDetails =(details)=>{
     
   //  const alreadyExist = showD.find(d => d.id !== details.id)
-  //  if(alreadyExist){
+  //  if(alreadyExist){ 
      setShowD([...showD, details])
   //  }
   }
-  // console.log(showD);
+  const [currentCocking, setCurrentCocking]=useState([])
+  const currentCock =(cockItem, id)=>{
+    const removeItem = showD.filter(idx => idx.recipe_id !==id)
+    setShowD(removeItem)
+    setCurrentCocking([...currentCocking, cockItem])
+  }
+  // console.log(currentCocking);
 
   return (
     <div className='container mx-auto '>
       <Header></Header>
       <Banner></Banner>
-      <Recipe showD={showD} showDetails={showDetails}></Recipe>
+      <Recipe currentCocking={currentCocking} currentCock={currentCock} showD={showD} showDetails={showDetails}></Recipe>
     </div>
   )
 }

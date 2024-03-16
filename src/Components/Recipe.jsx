@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import RecipeCart from "./RecipeCart";
 import ShowDetails from "./ShowDetails";
 
-const Recipe = ({showDetails,showD}) => {
+const Recipe = ({showDetails,showD, currentCock, currentCocking}) => {
     const [recipes, setrecipes] = useState([])
     useEffect(()=>{
         fetch('Food.json')
@@ -25,7 +25,7 @@ const Recipe = ({showDetails,showD}) => {
                     }
                 </div>
                 <div className="w-1/3">
-                    <ShowDetails showD={showD}></ShowDetails>
+                    <ShowDetails currentCocking={currentCocking} currentCock={currentCock} showD={showD}></ShowDetails>
                 </div>
             </div>
         </div>
