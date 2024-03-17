@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const ShowDetails = ({ showD,currentCock ,currentCocking}) => {
 //   console.log(currentCock);
@@ -85,3 +85,8 @@ const ShowDetails = ({ showD,currentCock ,currentCocking}) => {
 };
 
 export default ShowDetails;
+ShowDetails.propTypes={
+  showD:PropTypes.array.isRequired,
+  currentCocking:PropTypes.array.isRequired,
+  currentCock:PropTypes.func.isRequired,
+}

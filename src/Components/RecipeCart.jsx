@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { CiTimer } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 const RecipeCart = ({ recipe,showDetails }) => {
@@ -37,3 +38,7 @@ const RecipeCart = ({ recipe,showDetails }) => {
 };
 
 export default RecipeCart;
+RecipeCart.propTypes={
+  recipe:PropTypes.object.isRequired,
+  showDetails:PropTypes.func.isRequired
+}

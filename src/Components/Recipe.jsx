@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import RecipeCart from "./RecipeCart";
 import ShowDetails from "./ShowDetails";
@@ -33,3 +34,9 @@ const Recipe = ({showDetails,showD, currentCock, currentCocking}) => {
 };
 
 export default Recipe;
+Recipe.propTypes={
+    showDetails:PropTypes.func.isRequired,
+    showD:PropTypes.array.isRequired,
+    currentCock:PropTypes.object.isRequired,
+    currentCocking:PropTypes.object.isRequired
+}

@@ -4,15 +4,19 @@ import Banner from './Components/Banner'
 import Header from './Components/Header'
 import Recipe from './Components/Recipe'
 import Footer from './Components/Footer'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [showD ,setShowD] =useState([])
   const showDetails =(details)=>{
-    const already = showD.find(item => item.recipe_id != details.recipe_id)
+    // console.log(object);
+    const already = showD.find(item => item.recipe_id == details.recipe_id)
     if(!already){ 
       setShowD([...showD, details])
+      toast.success("Added successfully")
     }else{
-      alert('Please')
+      toast.warn("Already added!")
     }
   }
   const [currentCocking, setCurrentCocking]=useState([])
@@ -20,6 +24,7 @@ function App() {
     const removeItem = showD.filter(idx => idx.recipe_id !==id)
     setShowD(removeItem)
     setCurrentCocking([...currentCocking, cockItem])
+    toast.success('Current cock this item')
   }
   // console.log(currentCocking);
 
@@ -29,6 +34,7 @@ function App() {
       <Banner></Banner>
       <Recipe currentCocking={currentCocking} currentCock={currentCock} showD={showD} showDetails={showDetails}></Recipe>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   )
 }

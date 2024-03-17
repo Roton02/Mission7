@@ -1,5 +1,3 @@
-// import Frame from "../assets/Frame.jpg"
-import Rectangle from "../assets/Rectangle.jpg"
 
 const Banner = () => {
     return (
